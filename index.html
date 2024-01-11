@@ -1,41 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Curriculum Vitae - Michael Scott</title>
 
-    <link rel="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="headingContent">
+        <img src="./assets/michael-scott.png" alt="Michael Scott" />
 
-</head>
-<body>
-    <h1>Curriculum Vitae</h1>
+        <div class="heading">
+            <h1>Michael Scott</h1>
+            <h2>Regional Branch Manager</h2>
+        </div>
 
-<img src="michael-scott.png" alt="Michael Scott">
+      <p>
+          My name is Michael Scott. I am currently the regional manager of Dunder Mifflin
+          Scranton. I am a Scranton native. I love this town.
+          As a manager, I have great people skills. I am also great at managing, my
+          boss Jan Levinson can back me up on that.
+      </p>
+
+      <ul id="icons">
+        <li><a href="https://linkedin.com"><img src="assets/linkedin-icon.svg" alt="LinkedIn icon"></a></li>
+        <li><a href="mailto:michael.scott@example.com"><img src="assets/gmail-icon.svg" alt="Gmail icon"></a></li>
+      </ul>
+    </div>
+
     
-    <p>My name is Michael Scott. I am currently the manager of Dunder Mifflin Scranton. I am a Scranton native. I love this town.</p>
-    <p>As a manager, I have great people skills. I am also great at managing, my boss Jan Levinson can back me up on that.</p>
-    
-<div id="mainContent">
-    <article id="workExperience">
+    <div id="mainContent">
+      <article id="workExperience">
         <h2>Work Experience</h2>
 
         <ul>
-            <li>Branch Manager, Dunder Mifflin Scranton, jun 2003 - present</li>
-            <li>Fast Food Cook, McDonalds, feb 1999 - jan 2000</li>
+          <li>Regional Manager, Dunder Mifflin Paper, Scranton PA <span class="additionalInfo">January 2005 - present</span></li>
+          <li>Paper Salesman, Dunder Mifflin Paper, Scranton PA <span class="additionalInfo">July 1990 - December 2004</span></li>
+          <li>Fast Food Cook, McDonalds, Scranton PA <span class="additionalInfo">August 1986 - January 1990</span></li>
         </ul>
-    </article>
-    
-    <article id="education">
+      </article>
+
+      <article id="education">
         <h2>Education</h2>
         <ul>
-            <li>Scranton High School, sep 1982 - may 1986</li>
+          <li>Scranton High School, Scranton PA <span class="additionalInfo">September 1982 - May 1986</span></li>
+          <li>Scranton Middle School, Scranton PA <span class="additionalInfo">September 1979 - May 1982</span></li>
         </ul>
-    </article>
-    
-    <address id="contactInfo">
-        <p> You are welcome to contact me by phone <a href="tel:111-111-11>111-111-11</a> or by email <a href="mailto:michael.scott@example.com">michael.scott@example.com</p>
-    </address>
-</div>
-</body>
+      </article>
+
+      <section id="contactInfo">
+        <h2>Contact me</h2>
+        <p>
+          You are welcome to contact me by phone
+          <a href="tel:111-111-11">111-111-11</a> or by email
+          <a href="mailto:michael.scott@example.com"
+            >michael.scott@example.com</a
+          >.
+        </p>
+      </section>
+    </div>
+  </body>
 </html>
