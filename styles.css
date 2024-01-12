@@ -13,10 +13,6 @@ h1 {
   font-size: 300%;
 }
 
-h2 {
-    padding: 1rem;
-}
-
 ul {
   list-style-position: inside;
 }
@@ -32,6 +28,9 @@ a {
 
 img {
   width: 15rem;
+  border-radius: 50%;
+  background-color: rgb(139, 199, 191);
+  border: 2px solid black;
 }
 
 #mainContent {
@@ -42,12 +41,16 @@ img {
 #mainContent h2 {
   text-transform: uppercase;
   letter-spacing: 0.1ch;
+  padding: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
 }
 
 #education {
-    border-left: 2px solid black;
-    border-right: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
+
 #contactInfo {
   width: 30%;
 }
@@ -55,14 +58,16 @@ img {
 #headerContent {
   display: flex;
   background-color: #2d6a79e1;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   color: rgb(253, 253, 253);
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
+  padding: 1rem;
 }
 
 #headerContent p {
   width: 30%;
+  margin-right: 10rem;
 }
 
 .additionalInfo {
@@ -72,8 +77,8 @@ img {
 }
 
 .details {
-    list-style-type: none;
-    text-indent: 1.5rem;
+  list-style-type: none;
+  text-indent: 1.5rem;
 }
 
 #headerContent p::first-letter {
@@ -82,13 +87,25 @@ img {
     "Lucida Sans", Arial, sans-serif;
 }
 
+.heading {
+  width: 40%;
+}
+
+.heading h2 {
+  letter-spacing: 0.1ch;
+  color: #e4e4e4;
+}
+
 @media (max-width: 1024px) {
-  #mainContent, #headerContent {
+  #mainContent,
+  #headerContent {
     flex-direction: column;
+    text-align: center;
   }
 
   #headerContent p {
     width: 65%;
+    margin-right: 0;
   }
 
   #workExperience h2,
