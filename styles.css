@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -13,41 +14,11 @@ h1 {
   font-size: 300%;
 }
 
-ul {
-  list-style-position: inside;
-}
-
-a {
-  color: #358ddf;
-}
-
 img {
   width: 15rem;
   border-radius: 50%;
-  background-color: rgb(139, 199, 191);
+  background-color: #469aafe1;
   border: 2px solid black;
-}
-
-#mainContent {
-  display: flex;
-  flex-direction: row;
-}
-
-#mainContent p, #mainContent li {
-  margin: 1rem;
-}
-
-#mainContent h2 {
-  text-transform: uppercase;
-  letter-spacing: 0.1ch;
-  padding: 1rem;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  text-align: center;
-}
-
-#contactInfo {
-  width: 30%;
-  text-align: center;
 }
 
 #headerContent {
@@ -56,19 +27,6 @@ img {
   justify-content: center;
   align-items: center;
   color: rgb(253, 253, 253);
-  margin-bottom: 4rem;
-  padding: 1rem;
-}
-
-.additionalInfo {
-  display: block;
-  margin-left: 1.5rem;
-  color: #919191;
-}
-
-.details {
-  list-style-type: none;
-  margin-left: 1.5rem;
 }
 
 #headerContent p::first-letter {
@@ -92,11 +50,61 @@ img {
   font-weight: bold;
 }
 
+#gradient {
+  width: 100%;
+  height: 2rem;
+  background: linear-gradient(#2d6a79e1, #f0f0f0);
+}
+
+#mainContent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+#mainContent p,
+#mainContent li {
+  margin: 1rem;
+}
+
+#mainContent h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.1ch;
+  padding: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+}
+
+#contactInfo {
+  width: 100%;
+  text-align: center;
+}
+
+#contactInfo ul {
+  list-style-type: none;
+}
+
+.additionalInfo {
+  display: block;
+  margin-left: 1.5rem;
+  color: #919191;
+}
+
+.details {
+  list-style-type: none;
+  margin-left: 1.5rem;
+}
+
+#education,
+#workExperience {
+  width: 50%;
+}
+
 @media (max-width: 1024px) {
   #mainContent,
   #headerContent {
     flex-direction: column;
-    text-align: center;
   }
 
   #workExperience h2,
@@ -105,12 +113,9 @@ img {
     border-top: 2px solid black;
   }
 
-  #contactInfo {
-    width: initial;
-  }
-
+  #contactInfo,
+  #workExperience,
   #education {
-    border-right: none;
-    border-left: none;
+    width: initial;
   }
 }
