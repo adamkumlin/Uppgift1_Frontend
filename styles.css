@@ -132,7 +132,7 @@ footer img {
 
 @media (max-width: 1024px) {
   #mainContent,
-  #headerContent, footer {
+  #headerContent {
     flex-direction: column;
   }
 
@@ -142,7 +142,6 @@ footer img {
     border-top: 2px solid black;
   }
 
-  #contactInfo,
   #workExperience,
   #education {
     width: initial;
