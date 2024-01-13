@@ -14,19 +14,20 @@ h1 {
   font-size: 300%;
 }
 
-img {
-  width: 15rem;
-  border-radius: 50%;
-  background-color: #469aafe1;
-  border: 2px solid black;
-}
-
 #headerContent {
   display: flex;
   background-color: #2d6a79e1;
   justify-content: center;
   align-items: center;
   color: rgb(253, 253, 253);
+  padding: 1rem;
+}
+
+#headerContent img {
+  width: 15rem;
+  border-radius: 50%;
+  background-color: #469aafe1;
+  border: 2px solid black;
 }
 
 #headerContent p::first-letter {
@@ -50,7 +51,7 @@ img {
   font-weight: bold;
 }
 
-#gradient {
+#gradientTop {
   width: 100%;
   height: 2rem;
   background: linear-gradient(#2d6a79e1, #f0f0f0);
@@ -94,6 +95,7 @@ img {
 .details {
   list-style-type: none;
   margin-left: 1.5rem;
+  margin-bottom: 3rem;
 }
 
 #education,
@@ -101,9 +103,36 @@ img {
   width: 50%;
 }
 
+#education ul, #workExperience ul {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#gradientBottom {
+  width: 100%;
+  height: 2rem;
+  background: linear-gradient(#f0f0f0, #2d6a79e1);
+}
+
+footer {
+  width: 100%;
+  height: 5rem;
+  background-color: #2d6a79e1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+}
+
 @media (max-width: 1024px) {
   #mainContent,
-  #headerContent {
+  #headerContent, footer {
     flex-direction: column;
   }
 
@@ -117,5 +146,13 @@ img {
   #workExperience,
   #education {
     width: initial;
+  }
+
+  #workExperience ul, #education ul {
+    width: initial;
+  }
+
+  .introduction {
+    width: 50%;
   }
 }
