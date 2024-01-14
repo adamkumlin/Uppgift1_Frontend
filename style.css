@@ -11,16 +11,16 @@ body {
 
 h1 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 400%;
+  font-size: 350%;
 }
 
 header {
   display: flex;
-  background-color: #05262ee1;
+  background: linear-gradient(#05262ee1 92%, #f0f0f0);
   justify-content: center;
   align-items: center;
   color: rgb(253, 253, 253);
-  padding: 1rem;
+  padding-bottom: 2rem;
 }
 
 header img {
@@ -31,20 +31,23 @@ header img {
   margin: 1rem;
 }
 
-header p::first-letter {
-  font-size: 200%;
+header p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
 
+header p::first-letter {
+  font-size: 250%;
+}
+
 #introduction {
-  width: 40%;
+  width: 30%;
   padding: 0 1rem 0 1rem;
 }
 
 #introduction h2 {
   letter-spacing: 0.1ch;
-  font-size: 200%;
+  font-size: 150%;
   color: #e4e4e4;
 }
 
@@ -53,26 +56,19 @@ header p::first-letter {
   font-weight: bold;
 }
 
-#gradientTop {
-  width: 100%;
-  height: 2rem;
-  background: linear-gradient(#05262ee1, #f0f0f0);
-}
-/* Gradient that transitions between the sections 'headerContent' and 'mainContent' */
-
-#mainContent {
+main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 1rem;
 }
 
-#mainContent p,
-#mainContent li {
+main p,
+main li {
   margin: 1rem;
 }
 
-#mainContent h2 {
+main h2 {
   text-transform: uppercase;
   letter-spacing: 0.1ch;
   padding: 1rem;
@@ -93,11 +89,11 @@ header p::first-letter {
 .additionalInfo {
   display: block;
   margin-left: 1.5rem;
-  color: #919191;
+  color: #414141;
 }
 
 .details {
-  list-style-type: none;
+  list-style-type:circle;
   margin-left: 1.5rem;
   margin-bottom: 3rem;
 }
@@ -107,32 +103,28 @@ header p::first-letter {
   width: 50%;
 }
 
-#education ul, #workExperience ul {
+#education ul,
+#workExperience ul {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 
-#gradientBottom {
-  width: 100%;
-  height: 2rem;
-  background: linear-gradient(#f0f0f0, #05262ee1);
-}
-/* Gradient that transitions between the sections 'mainContent' and 'footer' */
-
 footer {
   width: 100%;
-  height: 5rem;
-  background-color: #05262ee1;
+  height: 7rem;
+  background: linear-gradient(#f0f0f0, #05262ee1 25%);
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  padding-top: 2rem;
 }
 
 footer img {
   width: 50px;
   height: 50px;
+  margin: 0 1rem 0 1rem;
 }
 
 footer img:hover {
@@ -145,8 +137,9 @@ footer address {
 }
 
 @media (max-width: 1024px) {
-  #mainContent,
-  #headerContent {
+
+  main,
+  header {
     flex-direction: column;
   }
 
@@ -161,11 +154,13 @@ footer address {
     width: initial;
   }
 
-  #workExperience ul, #education ul {
+  #workExperience ul,
+  #education ul {
     width: initial;
   }
 
-  .introduction {
-    width: 50%;
+  #introduction {
+    width: 80%;
+    text-align: center;
   }
 }
