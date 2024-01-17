@@ -9,11 +9,6 @@ body {
   background-color: #f0f0f0;
 }
 
-h1 {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 350%;
-}
-
 header {
   display: flex;
   background: linear-gradient(#05262ee1 92%, #f0f0f0);
@@ -21,6 +16,11 @@ header {
   align-items: center;
   color: rgb(253, 253, 253);
   padding-bottom: 2rem;
+}
+
+header h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 350%;
 }
 
 header img {
@@ -33,7 +33,7 @@ header img {
 
 header p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  "Lucida Sans", Arial, sans-serif;
 }
 
 header p::first-letter {
@@ -51,21 +51,11 @@ header p::first-letter {
   color: #e4e4e4;
 }
 
-.title {
-  color: rgb(25, 107, 155);
-  font-weight: bold;
-}
-
 main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   padding: 1rem;
-}
-
-main p,
-main li {
-  margin: 1rem;
 }
 
 main h2 {
@@ -77,13 +67,14 @@ main h2 {
   text-align: center;
 }
 
-#contactInfo {
-  width: 100%;
-  text-align: center;
+main p,
+main li {
+  margin: 1rem;
 }
 
-#contactInfo ul {
-  list-style-type: none;
+.title {
+  color: rgb(25, 107, 155);
+  font-weight: bold;
 }
 
 .additionalInfo {
@@ -93,9 +84,18 @@ main h2 {
 }
 
 .details {
-  list-style-type:circle;
+  list-style-type: circle;
   margin-left: 1.5rem;
   margin-bottom: 3rem;
+}
+
+#contactInfo {
+  width: 100%;
+  text-align: center;
+}
+
+#contactInfo ul {
+  list-style-type: none;
 }
 
 #education,
@@ -137,6 +137,7 @@ footer address {
 }
 
 @media (max-width: 1024px) {
+  /* While the screen is smaller than 1024px wide */
 
   main,
   header {
