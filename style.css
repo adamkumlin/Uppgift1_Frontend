@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  display: flex;
+  background: linear-gradient(#05262ee1 92%, #f0f0f0);
+  justify-content: center;
+  align-items: center;
+  color: rgb(253, 253, 253);
+  padding-bottom: 2rem;
+}
+
+header h1 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 350%;
+}
+
+header img {
+  width: 15rem;
+  border-radius: 50%;
+  background-color: #469aafe1;
+  border: 4px solid white;
+  margin: 1rem;
+}
+
+header p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+}
+
+header p::first-letter {
+  font-size: 250%;
+}
+
+#introduction {
+  width: 30%;
+  padding: 0 1rem 0 1rem;
+}
+
+#introduction h2 {
+  letter-spacing: 0.1ch;
+  font-size: 150%;
+  color: #e4e4e4;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+main h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.1ch;
+  padding: 1rem;
+  font-size: 200%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
+}
+
+main p,
+main li {
+  margin: 1rem;
+}
+
+.title {
+  color: rgb(25, 107, 155);
+  font-weight: bold;
+}
+
+.additionalInfo {
+  display: block;
+  margin-left: 1.5rem;
+  color: #414141;
+}
+
+.details {
+  list-style-type: circle;
+  margin-left: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+#contactInfo {
+  width: 100%;
+  text-align: center;
+}
+
+#contactInfo ul {
+  list-style-type: none;
+}
+
+#education,
+#workExperience {
+  width: 50%;
+}
+
+#education ul,
+#workExperience ul {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  width: 100%;
+  height: 7rem;
+  background: linear-gradient(#f0f0f0, #05262ee1 25%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+  margin: 0 1rem 0 1rem;
+}
+
+footer img:hover {
+  transition: ease-out 0.7s;
+  scale: 1.5;
+}
+
+footer address {
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  /* While the screen is smaller than 1024px wide */
+
+  main,
+  header {
+    flex-direction: column;
+  }
+
+  #workExperience h2,
+  #education h2,
+  #contactInfo h2 {
+    border-top: 2px solid black;
+  }
+
+  #workExperience,
+  #education {
+    width: initial;
+  }
+
+  #workExperience ul,
+  #education ul {
+    width: initial;
+  }
+
+  #introduction {
+    width: 80%;
+    text-align: center;
+  }
+}
