@@ -129,7 +129,7 @@ footer img {
 
 footer img:hover {
   transition: ease-out 0.7s;
-  scale: 1.5;
+  transform: scale(1.5);
 }
 
 /* Add transition to make the hover effect more natural */
