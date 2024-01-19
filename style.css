@@ -33,7 +33,7 @@ header img {
 
 header p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-  "Lucida Sans", Arial, sans-serif;
+    "Lucida Sans", Arial, sans-serif;
 }
 
 header p::first-letter {
@@ -130,8 +130,10 @@ footer img {
 
 footer img:hover {
   transition: ease-out 0.7s;
-  scale: 1.5;
+  transform: scale(1.5);
 }
+
+/* Add transition to make the hover effect more natural */
 
 footer address {
   color: white;
